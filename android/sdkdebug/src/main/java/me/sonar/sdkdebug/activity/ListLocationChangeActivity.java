@@ -48,13 +48,10 @@ public class ListLocationChangeActivity extends OrmLiteBaseListActivity<Database
     }
 
     public void clear(View view) {
-        try {
-            facade.deleteAll();
-            adapter.clear();
+        facade.deleteAll();
+        adapter.clear();
 //            adapter.addAll(getLocationChanges());
-            adapter.notifyDataSetChanged();
-        } catch (SQLException e) {
-            Toast.makeText(this, "Error clearing entries", Toast.LENGTH_LONG);
-        }
+        adapter.notifyDataSetChanged();
+
     }
 }
