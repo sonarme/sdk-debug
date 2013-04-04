@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import com.j256.ormlite.android.apptools.OrmLiteBaseListActivity;
-import me.sonar.androidsdk.R;
+import me.sonar.R;
 import me.sonar.androidsdk.dao.BaseDBFacade;
 import me.sonar.androidsdk.dao.DatabaseHelper;
 import me.sonar.androidsdk.model.location.LocationChange;

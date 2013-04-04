@@ -6,7 +6,6 @@
     <artifactId>sdkdebug</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>apklib</packaging>
-    <name>sdkdebug</name>
 
     <properties>
         <com.google.android-version>4.1.1.4</com.google.android-version>

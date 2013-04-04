@@ -10,7 +10,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import me.sonar.androidsdk.R;
+import me.sonar.R;
 
 public class MapActivity extends Activity {
 
