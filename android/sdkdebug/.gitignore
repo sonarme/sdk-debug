@@ -24,3 +24,5 @@ local.properties
 *.iml
 tmp
 gen-external-apklibs
+default.properties
+target
