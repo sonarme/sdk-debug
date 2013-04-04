@@ -62,14 +62,9 @@ public class ListGeofenceActivity extends OrmLiteBaseListActivity<DatabaseHelper
     }
 
     public void clear(View view) {
-        try {
-            facade.deleteAll();
-            adapter.clear();
-            adapter.addAll(getGeofences());
-            adapter.notifyDataSetChanged();
-
-        } catch (SQLException e) {
-            Toast.makeText(this, "Error clearing entries", Toast.LENGTH_LONG);
-        }
+        facade.deleteAll();
+        adapter.clear();
+        adapter.addAll(getGeofences());
+        adapter.notifyDataSetChanged();
     }
 }
