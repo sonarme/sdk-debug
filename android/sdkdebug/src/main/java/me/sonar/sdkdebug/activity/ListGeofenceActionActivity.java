@@ -45,6 +45,7 @@ public class ListGeofenceActionActivity extends OrmLiteBaseListActivity<Database
         Bundle bundle = new Bundle();
         bundle.putDouble("lat", ga.getLatitude());
         bundle.putDouble("lng", ga.getLongitude());
+        bundle.putDouble("radius", ga.getRadius());
         intent.putExtras(bundle);
         startActivity(intent);
     }
