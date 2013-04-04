@@ -1,8 +1,10 @@
 package me.sonar.sdkdebug.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 import com.j256.ormlite.android.apptools.OrmLiteBaseListActivity;
 import me.sonar.R;
@@ -34,6 +36,17 @@ public class ListGeofenceActionActivity extends OrmLiteBaseListActivity<Database
         setContentView(R.layout.list_view); //robolectric throws exception without this
         adapter = new GeofenceActionArrayAdapter(this, getGeofenceActions());
         setListAdapter(adapter);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        GeofenceAction ga = (GeofenceAction) l.getItemAtPosition(position);
+        Intent intent = new Intent(this, MapActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putDouble("lat", ga.getLatitude());
+        bundle.putDouble("lng", ga.getLongitude());
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     private List<GeofenceAction> getGeofenceActions() {
