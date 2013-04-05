@@ -8,7 +8,7 @@
     <packaging>apklib</packaging>
 
     <properties>
-        <com.google.android-version>4.1.1.4</com.google.android-version>
+        <platform.version>4.2.2_r2</platform.version>
         <android.sdk>16</android.sdk>
         <robolectric.version>2.0-snr-alpha-3-SNAPSHOT</robolectric.version>
     </properties>
@@ -27,9 +27,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.android</groupId>
+            <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>${com.google.android-version}</version>
+            <version>${platform.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
