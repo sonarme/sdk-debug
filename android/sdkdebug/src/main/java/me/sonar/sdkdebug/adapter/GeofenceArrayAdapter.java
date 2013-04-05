@@ -27,7 +27,7 @@ public class GeofenceArrayAdapter extends ArrayAdapter<Geofence> {
 
         View rowView = inflater.inflate(R.layout.list_geofence, parent, false);
         TextView nameView = (TextView) rowView.findViewById(R.id.geofence_name);
-        nameView.setText(geofences.get(position).getName());
+        nameView.setText(geofences.get(position).getId());
 
         TextView latView = (TextView) rowView.findViewById(R.id.geofence_lat);
         latView.setText("lat: " + String.valueOf(geofences.get(position).getLatitude()));
