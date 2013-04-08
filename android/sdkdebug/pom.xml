@@ -10,7 +10,7 @@
     <properties>
         <platform.version>4.2.2_r2</platform.version>
         <android.sdk>16</android.sdk>
-        <robolectric.version>2.0-snr-alpha-3-SNAPSHOT</robolectric.version>
+        <robolectric.version>2.0-snr-alpha-1</robolectric.version>
     </properties>
 
     <dependencies>
